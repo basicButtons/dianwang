@@ -22,10 +22,10 @@ export const LoginForm = (props) => {
     axios.post("/api/login", { username, password }).then((res) => {
       const data = res.data;
       localStorage.setItem("userInfo", JSON.stringify(data));
-      if (res.statusText == "OK") {
+      if (res.statusText == "OK" && data.type !== "管理员") {
         router.push("/admin");
       } else {
-        console.log("asgdfhagfsgd,");
+        router.push("/gover");
       }
     });
   };
@@ -35,7 +35,7 @@ export const LoginForm = (props) => {
         <div className="box" id="box">
           <h1>{props.title}登陆</h1>
           <div className="inbox">
-            <form action="" onSubmit={submit}>
+            <form action="" onSubmit={submit} className="login-form-wrapper">
               <input
                 type="text"
                 id="user"

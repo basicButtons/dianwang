@@ -29,6 +29,7 @@ export function AddModal(props) {
         form.resetFields();
         handleCancel();
       }}
+      autoComplete="off"
     >
       <Form
         form={form}

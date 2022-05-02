@@ -1,22 +1,23 @@
 import React, { useState } from "react";
-import { Table, Space, Modal, Button } from "antd";
-import { useUserInfo, useQuestions } from "../../share/fetch";
-import Form from "./form";
-
-interface reportItem {
-  key: string;
-  name: string;
-  energy: string;
-  network: string;
-  loadRate: string;
-  powerConsumptionRate: string;
-}
-
+import { Table, Space, Modal, Button, Form } from "antd";
+import {
+  useUserInfo,
+  useQuestions,
+  useGetOperatingCapacityByUserName,
+} from "../../share/fetch";
+import MyForm from "./form";
+import { useDefaultRecord } from "./hook";
+import { useUpdate } from "../../components/util";
 export default function index() {
-  const userInfo = useUserInfo();
-  const questions = useQuestions();
+  const { defaultRecord, setDefaultRecord, updateRecord } = useDefaultRecord();
+  const [form] = Form.useForm();
+  const { questions, setQuestions } = useQuestions();
   const [isModalVisible, setModalVisible] = useState(false);
-  const handleOk = () => {
+  const update = useUpdate();
+  const handleOk = async () => {
+    await updateRecord({ ...defaultRecord, ...form.getFieldsValue(true) }).then(
+      (res) => setQuestions(res)
+    );
     setModalVisible(false);
   };
   const handleCancel = () => {
@@ -58,11 +59,11 @@ export default function index() {
           <Button
             onClick={() => {
               setModalVisible(true);
+              setDefaultRecord(record);
             }}
           >
             修改
           </Button>
-          <a>Delete</a>
         </Space>
       ),
     },
@@ -76,9 +77,14 @@ export default function index() {
         onOk={handleOk}
         onCancel={handleCancel}
       >
-        <Form />
+        <MyForm initialValues={defaultRecord} form={form} />
       </Modal>
-      <Table columns={columns} dataSource={questions} pagination={false} />
+      <Table
+        key={Math.random()}
+        columns={columns}
+        dataSource={questions}
+        pagination={false}
+      />
     </div>
   );
 }

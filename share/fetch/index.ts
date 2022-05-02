@@ -2,6 +2,8 @@ import axios from "axios";
 import { constants } from "buffer";
 import { useEffect, useState } from "react";
 import { userInfo } from "../context/index";
+import { v4 as uuidv4 } from "uuid";
+import { useRouter } from "next/router";
 
 interface Item {
   key: string;
@@ -19,12 +21,13 @@ interface Item {
 }
 
 export const useUserInfo = (): userInfo => {
+  const router = useRouter();
   const [useInfo, setUserInfo] = useState({});
   useEffect(() => {
     let item = localStorage.getItem("userInfo");
     item = JSON.parse(item);
     setUserInfo(item);
-  }, []);
+  }, [router.pathname]);
   return useInfo as unknown as userInfo;
 };
 
@@ -69,22 +72,56 @@ export const useStructInfo = () => {
 
   return { dataSource, finishStatus, currentDataSource, setDataSource };
 };
-
+export interface reportItem {
+  key: string;
+  name: string;
+  energy: number;
+  network: number;
+  loadRate: string;
+  powerConsumptionRate: string;
+}
 export const useQuestions = () => {
   const { dataSource } = useStructInfo();
-  const [questions, setQuestions] = useState([]);
+  const userInfo = useUserInfo();
+  const [questions, setQuestions] = useState<reportItem[]>([]);
   useEffect(() => {
-    if (dataSource) {
-      setQuestions(
-        dataSource.map((item) => ({
-          name: item.name,
-          energy: "",
-          network: "",
-          loadRate: "",
-          powerConsumptionRate: "",
-        }))
-      );
-    }
+    axios
+      .get("/api/questions", { params: { username: userInfo.username } })
+      .then((res) => {
+        setQuestions(res.data.data);
+      });
   }, [dataSource]);
-  return questions;
+  return { questions, setQuestions };
+};
+
+interface tempMap {
+  operatingCapacity: number;
+  key: string;
+  name: string;
+}
+
+export const useGetOperatingCapacityByUserName = () => {
+  const userInfo = useUserInfo();
+  const { username: uname, type, name } = userInfo;
+  const [operatingCapacityList, setOper] = useState<tempMap[]>([]);
+  useEffect(() => {
+    axios
+      .get("/api/struct", {
+        params: {
+          username: uname,
+          type,
+          name,
+        },
+      })
+      .then((res) => {
+        const list = res.data.data;
+        const operList = list.map((item) => ({
+          operatingCapacity: item.operatingCapacity,
+          key: "yytueqweuqtw",
+          name: "哈局",
+        }));
+        setOper(operList);
+      });
+  }, [userInfo]);
+  return operatingCapacityList;
 };

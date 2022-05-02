@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Button, Popconfirm, Table, Typography } from "antd";
 import { useUserInfo } from "../../share/fetch";
 import { AddModal } from "../AddModal";
-import { useUpdate } from "./util";
+import { useUpdate } from "../util";
 import axios from "axios";
 import style from "./style.module.css";
 import { useStructInfo } from "../../share/fetch";

@@ -3,7 +3,7 @@ import React, { createContext, useContext } from "react";
 export interface userInfo {
   username?: string;
   name?: string;
-  type?: "省调" | "地调";
+  type?: "省调" | "地调" | "管理员";
   password?: string;
 }
 const UserInfoContext = createContext<userInfo>({});

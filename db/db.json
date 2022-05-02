@@ -1691,8 +1691,8 @@
             "backPressureUnit": "12312",
             "engage": false,
             "headting": false,
-            "unitCapacity": "123213",
-            "operatingCapacity": "123123"
+            "unitCapacity": "1",
+            "operatingCapacity": "1"
         }]
     }],
     "tempStruct": [{
@@ -1707,11 +1707,24 @@
             "engage": false,
             "headting": false,
             "unitCapacity": "123213",
-            "operatingCapacity": "123123"
+            "operatingCapacity": "1"
         }]
     }],
     "basicInfo": [{
         "username": "45110001",
         "done": false
+    }],
+    "questions": [{
+        "id": "45110001",
+        "username": "45110001",
+        "question": [{
+            "key": "yytueqweuqtw",
+            "time": "2022-05",
+            "name": "哈局",
+            "energy": 112,
+            "network": 1,
+            "loadRate": "0.1505",
+            "powerConsumptionRate": "99.1071"
+        }]
     }]
 }

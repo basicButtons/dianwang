@@ -32,15 +32,13 @@ export default function handler(req, res) {
       const { username, password } = req.body;
 
       axios
-        .get(
-          "http://localhost:7777/user/" +
-            wrapParams({
-              username,
-            })
-        )
+        .get("http://localhost:7777/user/", {
+          params: { username },
+        })
         .then((result) => {
           let data = result.data;
-          if (data[0].password === password) {
+          console.log(data);
+          if (data[0]?.password === password) {
             res.status(200).json(data[0]);
           }
         });
