@@ -1,12 +1,12 @@
 import React, { createContext, useContext } from "react";
 
 export interface userInfo {
-  username: string;
-  name: string;
-  type: "省调" | "地调";
+  username?: string;
+  name?: string;
+  type?: "省调" | "地调";
   password?: string;
 }
-const UserInfoContext = createContext<userInfo | {}>({});
+const UserInfoContext = createContext<userInfo>({});
 export const UserInfoContextProvider: React.FC<{
   value: userInfo;
   children: React.ReactNode;
@@ -17,5 +17,3 @@ export const UserInfoContextProvider: React.FC<{
     </UserInfoContext.Provider>
   );
 };
-
-export const useUserInfo = () => useContext(UserInfoContext);

@@ -19,10 +19,10 @@ export const LoginForm = (props) => {
     } else if (password.length === 0) {
       setErrors({ password: "密码不能为空。" });
     }
-    axios.post("/api/verify", { username, password }).then((res) => {
+    axios.post("/api/login", { username, password }).then((res) => {
       const data = res.data;
       localStorage.setItem("userInfo", JSON.stringify(data));
-      if (data.msg == "ok") {
+      if (res.statusText == "OK") {
         router.push("/admin");
       } else {
         console.log("asgdfhagfsgd,");

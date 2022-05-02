@@ -27,46 +27,23 @@ export default function handler(req, res) {
   const { method } = req;
   switch (method) {
     case "GET":
-      const { username, name } = getParams(req.url);
+      const url = new URLSearchParams(req.url);
+      const params = Object.fromEntries(url.entries());
+
+      const { username, name, type } = params;
       axios
-        .get(
-          "http://localhost:7777/struct/" +
-            wrapParams({
-              username,
-            })
-        )
-        .then((data) => {
-          let info = data.data;
-          console.log(info);
-          res.status(200).json({ msg: "ok" });
-        });
-      break;
-    case "POST":
-      const {
-        username: postUsername,
-        name: postName,
-        type: postType,
-      } = req.body;
-      console.log(req.body);
-      axios
-        .get(
-          "http://localhost:7777/struct/" +
-            wrapParams({
-              username: postUsername,
-            })
-        )
+        .get("http://localhost:7777/struct/", { params: { username } })
         .then((data) => {
           let info = data.data;
           if (info.length === 1) {
-            res.status(200).json({ data: info });
+            res.status(200).json({ data: info[0].data });
           } else {
             res.status(200).json({
               data: [
                 {
                   key: uuidv4(),
-                  name: postName,
-                  username: postUsername,
-                  type: postType,
+                  name: name,
+                  type: type,
                   generationType: "",
                   unitType: "",
                   backPressureUnit: "",
@@ -79,6 +56,20 @@ export default function handler(req, res) {
               ],
             });
           }
+        });
+      break;
+    case "POST":
+      const { username: postUsername, data: recordData } = req.body;
+      axios
+        .post("http://localhost:7777/struct/", {
+          username: postUsername,
+          data: recordData,
+        })
+        .then((data) => {
+          let info = data.data;
+          res.status(200).json({
+            msg: "ok",
+          });
         });
     default:
       break;

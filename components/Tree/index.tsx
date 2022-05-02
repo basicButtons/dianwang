@@ -1,9 +1,11 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Button, Popconfirm, Table, Typography } from "antd";
-import { useUserInfo } from "../../share/context";
+import { useUserInfo } from "../../share/fetch";
 import { AddModal } from "../AddModal";
 import { useUpdate } from "./util";
 import axios from "axios";
+import style from "./style.module.css";
+import { useStructInfo } from "../../share/fetch";
 
 interface Item {
   key: string;
@@ -19,108 +21,42 @@ interface Item {
   operatingCapacity: string; //	运行容量
 }
 
-const data = [
-  {
-    key: 1,
-    username: "John Brown sr.",
-    age: 60,
-    type: "主厂",
-    address: "New York No. 1 Lake Park",
-    children: [
-      {
-        key: 11,
-        username: "John Brown",
-        age: 42,
-        type: "机组",
-        address: "New York No. 2 Lake Park",
-      },
-      {
-        key: 12,
-        username: "John Brown jr.",
-        age: 30,
-        type: "分厂",
-        address: "New York No. 3 Lake Park",
-        children: [
-          {
-            key: 121,
-            usernamename: "Jimmy Brown",
-            age: 16,
-            type: "机组",
-            address: "New York No. 3 Lake Park",
-          },
-        ],
-      },
-      {
-        key: 13,
-        username: "Jim Green sr.",
-        age: 72,
-        type: "分厂",
-        address: "London No. 1 Lake Park",
-        children: [
-          {
-            key: 131,
-            username: "Jim Green",
-            age: 42,
-            type: "分厂",
-            address: "London No. 2 Lake Park",
-            children: [
-              {
-                key: 1311,
-                type: "机组",
-                username: "Jim Green jr.",
-                age: 25,
-                address: "London No. 3 Lake Park",
-              },
-              {
-                key: 1312,
-                username: "Jimmy Green sr.",
-                age: 18,
-                address: "London No. 4 Lake Park",
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    key: 2,
-    username: "Joe Black",
-    age: 32,
-    type: "机组",
-    address: "Sidney No. 1 Lake Park",
-  },
-];
-
-const edit = (item: Item) => {};
-
-const save = () => {};
-
-const cancel = () => {};
-
 export const TreeInfo = () => {
   const [isModalVisible, setModalVisible] = useState(false);
-  const [dataSource, setDataSource] = useState<Item[]>();
+  const { dataSource, finishStatus, currentDataSource, setDataSource } =
+    useStructInfo();
+  const [modalType, setModalType] = useState<"create" | "edit">("create");
+  const [originItem, setOriginItem] = useState<Item | {}>();
+  const userInfo = useUserInfo();
+  const ref = useRef<Item>();
   const update = useUpdate();
+
   const handleOk = (data) => {
-    setDataSource((item) => {
-      if (item[0].children) {
-        item[0].children.push(data);
-        return item;
-      } else {
-        item[0].children = [data];
-        return item;
-      }
-    });
+    if (modalType === "create") {
+      setDataSource((item) => {
+        return [...item, data];
+      });
+    } else {
+      setDataSource((item) => {
+        const newItem = item.filter((record) => record.key !== data.key);
+        return [...newItem, data];
+      });
+    }
     update();
     setModalVisible(false);
   };
+
+  const deleteRecord = (data: Item) => {
+    setDataSource((item) => {
+      const newItem = item.filter((record) => record.key !== data.key);
+      return newItem;
+    });
+  };
+
   const handleCancel = () => {
-    console.log("here");
     setModalVisible(false);
   };
-  const [modalType, setModalType] = useState<"create" | "edit">("create");
-  const [originItem, setOriginItem] = useState<Item | {}>();
+
   const showModal = (record: Item, type: "create" | "edit") => {
     setModalVisible(true);
     if (type === "create") {
@@ -128,15 +64,16 @@ export const TreeInfo = () => {
     } else {
       setOriginItem(record);
     }
+    ref.current = record;
     setModalType(type);
   };
-  const userInfo = useUserInfo();
+
   const columns = [
     {
       title: "名称",
-      dataIndex: "username",
-      key: "username",
-      width: "15%",
+      dataIndex: "name",
+      key: "name",
+      width: "5%",
     },
     {
       title: "类型",
@@ -165,7 +102,7 @@ export const TreeInfo = () => {
     {
       title: "2022年截至目前是否参与市场交易",
       dataIndex: "engage",
-      width: "5%",
+      width: "10%",
       key: "engage",
       render: (_, record: Item) => (record.engage ? "是" : "否"),
     },
@@ -193,7 +130,7 @@ export const TreeInfo = () => {
       dataIndex: "action",
       width: "20%",
       key: "action",
-      render: (_: any, record: Item) => {
+      render: (_: any, record: Item, index) => {
         return record.type !== "主厂" ? (
           <span>
             <Typography.Link style={{ marginRight: 8 }}>
@@ -204,16 +141,19 @@ export const TreeInfo = () => {
             <Typography.Link style={{ marginRight: 8 }}>
               <Button onClick={() => showModal(record, "edit")}>修改</Button>
             </Typography.Link>
-            <Popconfirm title="Sure to cancel?" onConfirm={cancel}>
+            <Popconfirm
+              title="Sure to cancel?"
+              onConfirm={() => {
+                deleteRecord(record);
+              }}
+            >
               <Button>删除</Button>
             </Popconfirm>
           </span>
         ) : (
           <span>
             <Typography.Link style={{ marginRight: 8 }}>
-              <Button onClick={() => showModal(record, "create")}>
-                添加分厂/机组
-              </Button>
+              <Button onClick={() => showModal(record, "create")}>添加</Button>
             </Typography.Link>
             <Typography.Link style={{ marginRight: 8 }}>
               <Button onClick={() => showModal(record, "edit")}>修改</Button>
@@ -223,30 +163,28 @@ export const TreeInfo = () => {
       },
     },
   ];
-  useEffect(() => {
-    axios
-      .post("api/struct", {
-        username: 45110001,
-      })
-      .then((res) => {
-        //@ts-ignorse
-        setDataSource(res.data.data);
-      });
-  }, []);
+
   const renderTable = useCallback(
     () => (
       <Table
         key={Math.random()}
         columns={columns}
-        dataSource={dataSource}
+        dataSource={currentDataSource}
         pagination={false}
-        defaultExpandAllRows={true}
       />
     ),
     [dataSource, columns, originItem, modalType]
   );
   return (
     <>
+      <div className={style["admin-header"]}>
+        {!finishStatus ? (
+          <div>请完善基本信息</div>
+        ) : (
+          <div>您已经完成基本信息填写</div>
+        )}
+        <Button type="primary">确认提交数据</Button>
+      </div>
       <AddModal
         isModalVisible={isModalVisible}
         handleOk={handleOk}

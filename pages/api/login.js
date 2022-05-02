@@ -26,19 +26,23 @@ const wrapParams = (params) => {
 };
 
 export default function handler(req, res) {
-  const params = getParams(req.url);
-  const { username, password } = params;
-  axios
-    .get(
-      "http://localhost:7777/user/" +
-        wrapParams({
-          username,
-        })
-    )
-    .then((res) => {
-      let data = res.data;
-      if (data.password === password) {
-        res.status(200).json({ msg: "ok" });
-      }
-    });
+  const { method } = req;
+  switch (method) {
+    case "POST":
+      const { username, password } = req.body;
+
+      axios
+        .get(
+          "http://localhost:7777/user/" +
+            wrapParams({
+              username,
+            })
+        )
+        .then((result) => {
+          let data = result.data;
+          if (data[0].password === password) {
+            res.status(200).json(data[0]);
+          }
+        });
+  }
 }

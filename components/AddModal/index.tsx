@@ -1,47 +1,14 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { Form, Input, Button, Modal, Select } from "antd";
+import { configConsumerProps } from "antd/lib/config-provider";
 
 const { Option } = Select;
 
 export function AddModal(props) {
   const { isModalVisible, handleOk, handleCancel, originItem, modalType } =
     props;
-  console.log(isModalVisible);
-
   const [form] = Form.useForm();
-  const [username, setUserName] = useState("");
-  const [type, setType] = useState("分厂");
-  const [unitType, setUnitType] = useState("风电");
-  const [generationType, setGenerationType] = useState("");
-  const [backPressureUnit, setBackPressureUnit] = useState("");
-  const [engage, setEngage] = useState("");
-  const [headting, setHeadting] = useState("");
-  const [unitCapacity, setUnitCapacity] = useState("");
-  const [operatingCapacity, setOperatingCapacity] = useState("");
-  useEffect(() => {
-    setUserName(originItem?.username);
-    setType(originItem?.type);
-    setUnitType(originItem?.unitType);
-    setGenerationType(originItem?.generationType);
-    setBackPressureUnit(originItem?.backPressureUnit);
-    setEngage(originItem?.engage);
-    setHeadting(originItem?.headting);
-    setUnitCapacity(originItem?.unitCapacity);
-    setOperatingCapacity(originItem?.operatingCapacity);
-  }, [originItem]);
-  console.log(username);
-  const clearForm = () => {
-    form.resetFields();
-    setUserName("");
-    setType("分厂");
-    setUnitType("风电");
-    setBackPressureUnit("");
-    setEngage("");
-    setGenerationType("");
-    setHeadting("");
-    setUnitCapacity("");
-    setOperatingCapacity("");
-  };
+  const [showUnitType, setShowUnitType] = useState(false);
   useEffect(() => {
     form.setFieldsValue(originItem);
   }, [originItem]);
@@ -55,20 +22,13 @@ export function AddModal(props) {
       cancelText={"取消"}
       okText={"提交"}
       onOk={() => {
-        clearForm();
-        handleOk({
-          username,
-          type,
-          unitType,
-          backPressureUnit,
-          engage,
-          generationType,
-          headting,
-          unitCapacity,
-          operatingCapacity,
-        });
+        handleOk(form.getFieldsValue(true));
+        form.resetFields();
       }}
-      onCancel={handleCancel}
+      onCancel={() => {
+        form.resetFields();
+        handleCancel();
+      }}
     >
       <Form
         form={form}
@@ -79,11 +39,11 @@ export function AddModal(props) {
         wrapperCol={{ flex: 1 }}
         colon={false}
       >
-        <Form.Item label="名称" name="username" rules={[{ required: true }]}>
+        <Form.Item label="名称" name="name" rules={[{ required: true }]}>
           <Input />
         </Form.Item>
         <Form.Item label="类型" name="type" rules={[{ required: true }]}>
-          <Select defaultValue="分厂">
+          <Select>
             <Option value="主厂">主厂</Option>
             <Option value="分厂">分厂</Option>
             <Option value="机组">机组</Option>
@@ -94,7 +54,15 @@ export function AddModal(props) {
           name="generationType"
           rules={[{ required: true }]}
         >
-          <Select defaultValue="风电">
+          <Select
+            onChange={(value) => {
+              if (value === "火电") {
+                setShowUnitType(true);
+              } else {
+                setShowUnitType(false);
+              }
+            }}
+          >
             <Option value="风电">风电</Option>
             <Option value="光伏">光伏</Option>
             <Option value="水电">水电</Option>
@@ -104,7 +72,7 @@ export function AddModal(props) {
             <Option value="沼气">沼气</Option>
           </Select>
         </Form.Item>
-        {unitType === "火电" ? (
+        {showUnitType ? (
           <Form.Item
             label="机组类型(仅火电)"
             name="unitType"

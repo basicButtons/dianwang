@@ -17,5 +17,7 @@ export default function handler(req, res) {
           username,
         })
     )
-    .then(res.status(200).json({ msg: "ok" }));
+    .then((result) => {
+      res.status(200).json({ msg: "ok" });
+    });
 }

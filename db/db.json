@@ -82,1332 +82,1598 @@
             "username": "45100001",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "镜厂",
             "username": "45100002",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "莲花厂",
             "username": "45100003",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "龙华厂",
             "username": "45100004",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "东升水电",
             "username": "45100005",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "镜老厂",
             "username": "45100006",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "山口厂",
             "username": "45100007",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "哈热厂",
             "username": "45100008",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "哈发厂",
             "username": "45100009",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "哈三厂",
             "username": "45100010",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "富热厂",
             "username": "45100011",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "富二厂",
             "username": "45100012",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "齐热厂",
             "username": "45100013",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "佳热厂",
             "username": "45100014",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "牡二厂",
             "username": "45100015",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "鹤岗厂",
             "username": "45100016",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "新华厂",
             "username": "45100017",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "西城热电",
             "username": "45100018",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "华能伊春",
             "username": "45100019",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "北安厂",
             "username": "45100020",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "双厂",
             "username": "45100021",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "哈平南厂",
             "username": "45100022",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "神华宝清发电厂",
             "username": "45100023",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "鸡西热电",
             "username": "45100024",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "鸡西二热",
             "username": "45100025",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "哈一热厂",
             "username": "45100026",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "双热厂",
             "username": "45100027",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "七台河厂",
             "username": "45100028",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "绥化热电",
             "username": "45100029",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "达尔凯厂-威立雅",
             "username": "45100030",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "乙烯厂",
             "username": "45100031",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宏伟厂",
             "username": "45100032",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "油田热电厂",
             "username": "45100033",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "鹤矿热厂",
             "username": "45100034",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "立达厂",
             "username": "45100035",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "中盟厂",
             "username": "45100036",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "中恒厂",
             "username": "45100037",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "黑热厂",
             "username": "45100038",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "牡热厂",
             "username": "45100039",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "鑫玛安达厂",
             "username": "45100040",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "鑫玛呼兰厂",
             "username": "45100041",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宝泰隆厂",
             "username": "45100042",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "轧钢厂",
             "username": "45100043",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "庆翔一厂",
             "username": "45100044",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "海伦厂",
             "username": "45100045",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "铁力宇翔热电",
             "username": "45100046",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "西钢厂",
             "username": "45100047",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "加泰热电厂",
             "username": "45100048",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "梅里斯电厂",
             "username": "45100049",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "博源热电",
             "username": "45100050",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "庆翔二厂",
             "username": "45100051",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇源生物质",
             "username": "45100052",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "同江长恒热电",
             "username": "45100053",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇东华庆生物质",
             "username": "45100054",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇东肇能生物质",
             "username": "45100055",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "北林生物质",
             "username": "45100056",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "兴泰生物质",
             "username": "45100057",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "老虎岗风电场一期",
             "username": "45100058",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "老虎岗风电场二期",
             "username": "45100059",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "双津河风电场",
             "username": "45100060",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宾县大个岭风电场",
             "username": "45100061",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宾县大泉子风电场",
             "username": "45100062",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "勃利双星风电（驼腰子）",
             "username": "45100063",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "瑞好风电场一期",
             "username": "45100064",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "瑞好风电场二期",
             "username": "45100065",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "和平风电场",
             "username": "45100066",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "新海风电场（二期）",
             "username": "45100067",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "兴隆风场（一期）",
             "username": "45100068",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "中丹风电场一期",
             "username": "45100069",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "中丹风电场二期",
             "username": "45100070",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "中丹风电场三期",
             "username": "45100071",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "中丹风电场四期",
             "username": "45100072",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "五连湖风电场（红骥）",
             "username": "45100073",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "五连湖风电场（对山）",
             "username": "45100074",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "银浪风电场（银浪）",
             "username": "45100075",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "银浪风电场（宏伟）",
             "username": "45100076",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆东辉新能源有限公司",
             "username": "45100077",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "东辉风电场二期（青山）",
             "username": "45100078",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "碾子山风电场",
             "username": "45100079",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "苏家店风电场",
             "username": "45100080",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "北架风电场",
             "username": "45100081",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "虎峰岭风电场一期",
             "username": "45100082",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "虎峰岭风电场二期",
             "username": "45100083",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "太阳山风电场",
             "username": "45100084",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "太平风电场",
             "username": "45100085",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "吉成风电场一期",
             "username": "45100086",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "吉成风电场二期",
             "username": "45100087",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "吉成风电场三期",
             "username": "45100088",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "晨光风电场",
             "username": "45100089",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "富强风电场",
             "username": "45100090",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "拉弹泡风电场一期",
             "username": "45100091",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "拉弹泡风电场二期",
             "username": "45100092",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "拉弹泡风电场三期",
             "username": "45100093",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宝山风电场",
             "username": "45100094",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "青龙风电场",
             "username": "45100095",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "猴石风电场",
             "username": "45100096",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "富裕风电场一期",
             "username": "45100097",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "富裕风电场二期",
             "username": "45100098",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "富裕风电场三期",
             "username": "45100099",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "锐驰风电场",
             "username": "45100100",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "海浪风电场",
             "username": "45100101",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "红旗风电场",
             "username": "45100102",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "望云峰风电场",
             "username": "45100103",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "兴凯湖风电场一期",
             "username": "45100104",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "兴凯湖风电场二期",
             "username": "45100105",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "兴凯湖风电场三期",
             "username": "45100106",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "兴凯湖风电场四期",
             "username": "45100107",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "高楞风电场一期",
             "username": "45100108",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "高楞风电场二期",
             "username": "45100109",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "绥阳风电场",
             "username": "45100110",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "乌尔古力风电场一期",
             "username": "45100111",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "乌尔古力风电场二期",
             "username": "45100112",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "古力风电场三期",
             "username": "45100113",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "十文字风电场一期",
             "username": "45100114",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "十文字风电场二期",
             "username": "45100115",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "平岗风电场一期",
             "username": "45100116",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "平岗风电场二期",
             "username": "45100117",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "立宏风电场一期",
             "username": "45100118",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "草原风电场",
             "username": "45100119",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大黑山风电场",
             "username": "45100120",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "小黑山风电场",
             "username": "45100121",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "长寿山黄团岭风电场",
             "username": "45100122",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "白山风电场一、二期",
             "username": "45100123",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "白山风电场三、四期",
             "username": "45100124",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "爱华风电场",
             "username": "45100125",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "曙光风电场",
             "username": "45100126",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "龙源夹信山风电场一期",
             "username": "45100127",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "龙源夹信山风电场二期（老平坨）",
             "username": "45100128",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "瑞信风电场",
             "username": "45100129",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "鸡冠山风电场一期",
             "username": "45100130",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "鸡冠山风电场二期",
             "username": "45100131",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "富锦风电场一期",
             "username": "45100132",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "富锦风电场二期",
             "username": "45100133",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "富锦风电场三期",
             "username": "#3\t45100134",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "顶丰风电场",
             "username": "45100135",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "虎林石青山风电一期",
             "username": "45100136",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "虎林石青山风电二期",
             "username": "45100137",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "街津山风电场",
             "username": "45100138",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "街津山风电场二期",
             "username": "45100139",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "街津山风电场二期-江胜",
             "username": "45100140",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "尖山风电场",
             "username": "45100141",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "东堤风电场（一期）",
             "username": "45100142",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "驿马山风电场",
             "username": "45100143",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "横岱山风电场",
             "username": "45100144",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "东明园风电场一期",
             "username": "45100145",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "东明园风电场二期",
             "username": "45100146",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "哈拉海风电场一期",
             "username": "45100147",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "龙江杏山风力发电（哈拉海二期）",
             "username": "45100148",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "丹江风电场",
             "username": "45100149",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "七里嘎风电场一期",
             "username": "45100150",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "七里嘎风电场二期",
             "username": "45100151",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "渠首风电场",
             "username": "45100152",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "七台河佳兴风力发电",
             "username": "45100153",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "七台河万龙风电",
             "username": "45100154",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安邦河风电场一期",
             "username": "45100155",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安邦河风电场二期",
             "username": "45100156",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安邦河风电场三期",
             "username": "45100157",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "蝙蝠山风电场",
             "username": "45100158",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "岔林河风电场",
             "username": "45100159",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "代马沟风电场一期",
             "username": "45100160",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "代马沟风电场二期",
             "username": "45100161",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "乌伊岭阿廷河风电场",
             "username": "45100162",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "小城山风电场",
             "username": "45100163",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "美林风电场一期",
             "username": "45100164",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "美林风电场二期",
             "username": "45100165",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "岭东风电场",
             "username": "45100166",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "马鞍山风电场",
             "username": "45100167",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "云岭云雾山风电场",
             "username": "45100168",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "顺德风电场",
             "username": "45100169",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "顺德风电场二期",
             "username": "45100170",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "林口胜利风电场",
             "username": "45100171",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "泰来宏浩风电场",
             "username": "45100172",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "泰来广源大新风电场",
             "username": "45100173",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "新天风电场一期",
             "username": "45100174",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "新天风电场二期",
             "username": "45100175",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "东安风电场",
             "username": "45100176",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "瑞丰风电场（西沟）",
             "username": "45100177",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "瑞丰风电场（诚丰）",
             "username": "45100178",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大岗风电场一期（平桥）",
             "username": "45100179",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大岗风电场二期",
             "username": "45100180",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "双岭风电场（头道岭）",
             "username": "45100181",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "双岭风电场（二道岭）",
             "username": "45100182",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "摆渡风电场",
             "username": "45100183",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "顺兴风电场",
             "username": "45100184",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "双发风电场",
             "username": "45100185",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "华能萝北新垦风电场",
             "username": "45100186",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "中广核明水通肯河风电场",
             "username": "45100187",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "绥滨江阴远阳风电场",
             "username": "45100188",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "团结风电场",
             "username": "45100189",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "远江风电场",
             "username": "45100190",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "鹤鸣湖风电厂",
             "username": "45100191",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "长丰风电场",
             "username": "45100192",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "中和风电场",
             "username": "45100193",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "海智风电场",
             "username": "45100194",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "晟银风电场",
             "username": "45100195",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "公心集风电场",
             "username": "45100196",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "兴宾风电场",
             "username": "45100197",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "讷河兴旺光伏电站",
             "username": "45100198",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宁姜新天光伏电站",
             "username": "45100199",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宁姜新天立志光伏电站",
             "username": "45100200",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宁姜双胜光伏",
             "username": "45100201",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宁姜中电投光伏电站",
             "username": "45100202",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宁姜中电双兴光伏电站",
             "username": "45100203",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宁姜环球光伏电站",
             "username": "45100204",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宁姜九洲立志光伏电站",
             "username": "45100205",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安达通宝光伏电站",
             "username": "45100206",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇源华光光伏电站",
             "username": "45100207",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安达万福光伏电站一期",
             "username": "45100208",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安达万福光伏电站二期",
             "username": "45100209",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安达万福光伏电站三期",
             "username": "45100210",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安达万福光伏电站四期",
             "username": "45100211",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安达青肯泡光伏电站A",
             "username": "45100212",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安达青肯泡光伏电站B",
             "username": "45100213",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "青肯泡光伏电站二期A",
             "username": "45100214",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "青肯泡光伏电站二期B",
             "username": "45100215",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安达中聚光伏电站一期",
             "username": "45100216",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "绿锐光伏电站",
             "username": "45100217",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆辰瑞新阳光伏电站",
             "username": "45100218",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆纪元新阳光伏电站",
             "username": "45100219",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "辉庆光伏电站一期",
             "username": "45100220",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "辉庆光伏电站二期",
             "username": "45100221",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇东泰光光伏电站（一期）",
             "username": "45100222",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇东泰光光伏电站（二期）",
             "username": "45100223",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇源蓝天光伏电站（一期）",
             "username": "45100224",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇源蓝天光伏电站（二期）",
             "username": "45100225",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇源蓝天光伏电站（三期）",
             "username": "45100226",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇源蓝天光伏电站（四期）",
             "username": "45100227",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆绿洲光伏电站（一期）",
             "username": "45100228",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆绿洲光伏电站（二期）",
             "username": "45100229",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆绿洲光伏电站（三期）",
             "username": "45100230",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆晶能光伏电站",
             "username": "45100231",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆晶科光伏电站",
             "username": "45100232",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇东向前光伏电站",
             "username": "45100233",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇东富荣光伏电站",
             "username": "45100234",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "东海光伏电站一期",
             "username": "45100235",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "东海光伏电站二期",
             "username": "45100236",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "东海光伏电站三期",
             "username": "45100237",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "讷河金阳光伏电站一、二期",
             "username": "45100238",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宁姜好新光伏",
             "username": "45100239",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "祥鹤光伏电站A",
             "username": "45100240",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "祥鹤光伏电站B",
             "username": "45100241",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇州精锐光伏电站",
             "username": "45100242",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆合庆光伏电站A",
             "username": "45100243",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆合庆光伏电站B",
             "username": "45100244",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆美阳达光伏电站A",
             "username": "45100245",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "大庆美阳达光伏电站B",
             "username": "45100246",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "肇州隆辉光伏电站",
             "username": "45100247",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "昌德同科光伏1",
             "username": "45100248",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "昌德同科光伏2",
             "username": "45100249",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "昌德国开光伏A",
             "username": "45100250",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "昌德国开光伏B",
             "username": "45100251",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "昌德龙电光伏",
             "username": "45100252",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "绥滨宝宜光伏电站",
             "username": "45100253",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "升平光伏(安达市兴电新能源有限公司)",
             "username": "45100254",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "博众光伏电站",
             "username": "45100255",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "富裕元盛光伏",
             "username": "45100256",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "种畜场光伏（金海）",
             "username": "45100257",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "泰来九洲明月光伏",
             "username": "45100258",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "泰来九洲新清光伏",
             "username": "45100259",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "永跃光伏电站",
             "username": "45100260",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "日泽光伏电站",
             "username": "45100261",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "通力光伏电站",
             "username": "45100262",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "长胜光伏电站",
             "username": "45100263",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "安众光伏电站",
             "username": "45100264",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "宁升光伏电站",
             "username": "45100265",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "通威光伏电站",
             "username": "45100266",
             "password": "123456",
             "type": "省调"
-        }, {
+        },
+        {
             "name": "管理员",
             "username": "admin",
             "password": "admin",
@@ -1415,16 +1681,37 @@
         }
     ],
     "struct": [{
-        "key": "yytueqweuqtw",
-        "name": "哈局",
         "username": "45110001",
-        "type": "主厂",
-        "generationType": "火电",
-        "unitType": "some",
-        "backPressureUnit": "12312",
-        "engage": false,
-        "headting": false,
-        "unitCapacity": "123213",
-        "operatingCapacity": "123123"
+        "data": [{
+            "key": "yytueqweuqtw",
+            "name": "哈局",
+            "type": "主厂",
+            "generationType": "火电",
+            "unitType": "some",
+            "backPressureUnit": "12312",
+            "engage": false,
+            "headting": false,
+            "unitCapacity": "123213",
+            "operatingCapacity": "123123"
+        }]
+    }],
+    "tempStruct": [{
+        "username": "45110001",
+        "data": [{
+            "key": "yytueqweuqtw",
+            "name": "哈局",
+            "type": "主厂",
+            "generationType": "火电",
+            "unitType": "some",
+            "backPressureUnit": "12312",
+            "engage": false,
+            "headting": false,
+            "unitCapacity": "123213",
+            "operatingCapacity": "123123"
+        }]
+    }],
+    "basicInfo": [{
+        "username": "45110001",
+        "done": false
     }]
 }
